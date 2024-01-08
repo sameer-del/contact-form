@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body{
+/*   background: rgb(39,54,126);
+background: linear-gradient(90deg, rgba(39,54,126,1) 0%, rgba(28,23,23,1) 47%, rgba(25,25,137,1) 80%, rgba(10,79,67,1) 100%); 
+ */
+ background-image: url('background.jpg');
+ background-position: cover center;
+color: antiquewhite;
+font-family: "Audiowide", sans-serif;
+overflow:hidden;
+}
+h1{
+  text-transform: uppercase;
+}
+.form-container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.left{
+  width: 400px;
+ 
+  padding: 20px 35px;
+  
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+  
+  
+}
+.right{
+  width: 500px;
+  
+}
+.right svg{
+  width: 100%;
+}
+.full-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+ .inputs-fields{
+  width: 350px;
+  font-family: "Audiowide", sans-serif;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  color: black;
+  z-index: 999;
+  background-color: #FFFFFF;
+  padding-left: 25px;
+}
+.textarea{
+  padding-top: 15px;
+  padding-left: 15px;
+  border: none;
+  outline: none;
+  z-index: 999;   
+  width: 350px;
+  height: 130px;
+  border-radius: 30px;
+  font-family: "Audiowide", sans-serif;
+
+}
+.inputs-fields:focus{
+  border: 2px solid #ff994f;
+}
+.textarea:focus{
+  border: 2px solid #ff994f;
+}
+.inputs-fields::placeholder{
+  color: #a9a9a9;
+}
+button{
+  width: 150px;
+  padding: 15px 35px;
+  border-radius: 35px;
+  outline: none;
+  border: none;
+  font-weight:  600;
+  font-size: 15px;
+  background: rgb(203,41,41);
+background: linear-gradient(90deg, rgba(203,41,41,1) 0%, rgba(217,83,217,1) 47%, rgba(143,9,187,1) 80%, rgba(123,22,114,1) 100%);
+  cursor: pointer;
+} 
+@media (max-width: 768px) {
+ 
+  .left{
+    width: 100%;
+    
+  }
+  .right{
+    
+    display: none;
+  }
+  .full-form{
+    
+    gap: 30px;
+  }
+ 
+  
+
+
+}
